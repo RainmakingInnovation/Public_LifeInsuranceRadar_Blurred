@@ -3339,7 +3339,11 @@
                     .enter()
                     .append("a")
                     .attr("xlink:href", function (d) {
-                      return formatURL(d.URL);
+                      if (d["Opp space mapping 1"] != "end of life care" && d["Opp space mapping 1"] != "connected health") {
+                        return ""
+                      } else {
+                        return formatURL(d.URL);
+                      }
                     })
                     .attr("target", "_blank")
                     .append("circle")
@@ -3402,7 +3406,11 @@
                     .enter()
                     .append("a")
                     .attr("xlink:href", function (d) {
-                      return formatURL(d.URL);
+                      if (d["Opp space mapping 1"] != "end of life care" && d["Opp space mapping 1"] != "connected health") {
+                        return ""
+                      } else {
+                        return formatURL(d.URL);
+                      }
                     })
                     .attr("target", "_blank")
                     .append("polygon")
@@ -3431,7 +3439,11 @@
                     .enter()
                     .append("a")
                     .attr("xlink:href", function (d) {
-                      return formatURL(d.URL);
+                      if (d["Opp space mapping 1"] != "end of life care" && d["Opp space mapping 1"] != "connected health") {
+                        return ""
+                      } else {
+                        return formatURL(d.URL);
+                      }
                     })
                     .attr("target", "_blank")
                     .append("rect")
